@@ -1,0 +1,17 @@
+let btn = document.getElementById("btn");
+let a = document.getElementById("demo");
+
+window.onscroll = function(){
+    if(scrollY >= 700)
+    {
+        btn.style.display = 'block';
+    }
+    else{
+        btn.style.display = 'none';
+    }
+};
+btn.onclick = () =>
+    scroll({
+        top:0,
+        behavior:"smooth"
+    });
